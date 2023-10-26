@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #0044ff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%; /* Use the entire width of the screen */
+    justify-content: space-between; /* Divide the menu into three equal parts */
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+/* Center-align left and right menu options */
+nav li:first-child, nav li:last-child {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff8800;
+}
+
+#content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0044ff;
+    color: #fff;
+}
