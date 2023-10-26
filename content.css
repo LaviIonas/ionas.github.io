@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #0044ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content {
+    max-width: 100%; /* Ensure the content spans the full width of the screen */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: opacity 0.5s; /* Add a transition for the opacity change */
+}
+
+section {
+    margin: 20px 0;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+/* Initial style for fading effect */
+#content {
+    opacity: 1;
+}
+
+/* Hide the content initially */
+#content[style] {
+    opacity: 0;
+}
