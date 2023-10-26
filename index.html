@@ -16,13 +16,28 @@
           <p>Data Scientist and Web Developer</p>
       </header>
 
-      <nav>
+      <div class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#" id="web-link">Web Development</a>
+                <a href="#" id="ds-link">Data Science</a>
+                <a href="#" id="ml-link">Machine Learning</a>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- <nav class="navbar">
           <ul>
-              <li><a href="#" id="about-link">About</a></li>
-              <li><a href="#" id="portfolio-link">Portfolio</a></li>
-              <li><a href="#" id="contact-link">Contact</a></li>
+              <li><a href="#" id="about-link">Web Development</a></li>
+              <li><a href="#" id="portfolio-link">Data Science</a></li>
+              <li><a href="#" id="contact-link">Machine Learning</a></li>
           </ul>
-      </nav>
+      </nav> -->
 
 
       <div id="content"></div>
@@ -36,6 +51,8 @@
           <h2>Contact Me</h2>
           <p>Feel free to reach out to me at laviionas772@gmail.com</p>
       </section>
+
+      <script src="nav-bar-script.js"></script>
 
       <script>
         // Function to toggle the visibility of content
@@ -55,10 +72,15 @@
             }, 500); // Adjust this delay as needed
         }
 
+        // Load the default content (e.g., 'about') when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            toggleContent('web-dev');
+        });
+
         // Add event listeners for menu items
-        document.getElementById('about-link').addEventListener('click', () => toggleContent('about'));
-        document.getElementById('portfolio-link').addEventListener('click', () => toggleContent('portfolio'));
-        document.getElementById('contact-link').addEventListener('click', () => toggleContent('contact'));
+        document.getElementById('web-link').addEventListener('click', () => toggleContent('web-dev'));
+        document.getElementById('ds-link').addEventListener('click', () => toggleContent('data-science'));
+        document.getElementById('ml-link').addEventListener('click', () => toggleContent('machine-learning'));
     </script>
 
     <footer>

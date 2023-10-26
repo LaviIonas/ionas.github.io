@@ -23,10 +23,12 @@ nav a {
 
 #content {
     max-width: 100%; /* Ensure the content spans the full width of the screen */
+    height: auto; /* Adjust this value based on the tallest content section */
+    overflow-y: auto; /* Add vertical scrolling if content exceeds the fixed height */
     margin: 0;
     padding: 20px;
     background-color: #f0f0f0;
-    transition: opacity 0.5s; /* Add a transition for the opacity change */
+    transition: opacity 0.5s;
 }
 
 section {

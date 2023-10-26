@@ -5,130 +5,50 @@ body {
     background-color: #fff;
 }
 
-header {
-    background-color: #0044ff;
+.navbar {
+    background-color: #0075FF;
     color: #fff;
-    padding: 20px 0;
+    min-height: 50px;
+    width: 100%;
+    z-index: 1;
 }
 
-#header-inner {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
-h1 {
-    font-size: 36px;
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+.navbar a:hover {
+    color: #FF9900;
 }
 
-nav li {
-    margin: 0 20px;
-}
-
-nav li:first-child,
-nav li:last-child {
-    margin: 0;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-nav a {
+.navbar-logo a {
+    font-size: 24px;
+    text-transform: uppercase;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s, opacity 0.3s; /* Add transitions for color and opacity */
-    opacity: 0.7; /* Initial opacity for menu items */
-}
-
-nav a:hover {
-    color: #ff8800;
-    opacity: 1; /* Increase opacity on hover */
-}
-
-/* Add a fade-in/fade-out transition */
-#about-content,
-#portfolio-content,
-#contact-content {
-    transition: opacity 0.3s;
-    opacity: 0; /* Initial opacity for content sections */
-}
-
-#about-content.active,
-#portfolio-content.active,
-#contact-content.active {
-    opacity: 1; /* Increase opacity for active content */
 }
 
 #content {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
-
-section {
-    margin: 20px 0;
-}
-
-.project {
-    margin: 20px 0;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #0044ff;
-    color: #fff;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    max-width: 100%;
     margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav li {
-    margin: 0 20px;
-}
-
-nav a {
-    color: #0044ff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-#content {
-    max-width: 1200px;
-    margin: 20px auto;
     padding: 20px;
     background-color: #f0f0f0;
-    transition: opacity 0.5s; /* Add a transition for the opacity change */
-}
-
-section {
-    margin: 20px 0;
-}
-
-.project {
-    margin: 20px 0;
+    margin-top: 50px;
 }
 
 /* Initial style for fading effect */
@@ -136,7 +56,10 @@ section {
     opacity: 1;
 }
 
-/* Hide the content initially */
-#content[style] {
-    opacity: 0;
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect when sticky */
+    background-color: #0075FF; /* Change the background color when sticky */
 }
