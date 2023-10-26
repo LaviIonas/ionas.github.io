@@ -4,17 +4,61 @@
           <p>Welcome to my portfolio website. I am a passionate data scientist and web developer with a love for solving complex problems using data.</p>
       </section>
 
-      <section id="portfolio">
-          <h2>Portfolio</h2>
-          <div class="project">
-              <h3>Project 1</h3>
-              <p>Description of project 1 goes here.</p>
-          </div>
-          <div class="project">
-              <h3>Project 2</h3>
-              <p>Description of project 2 goes here.</p>
-          </div>
-      </section>
+      <div class="portfolio">
+        <div class="project">
+            Project 1
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h3>Project 1</h3>
+                    <p>Additional information about Project 1 goes here.</p>
+                </div>
+                <button class="close-button">Close</button>
+            </div>
+        </div>
+
+        <div class="project">
+            Project 2
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h3>Project 2</h3>
+                    <p>Additional information about Project 2 goes here.</p>
+                </div>
+                <button class="close-button">Close</button>
+            </div>
+        </div>
+
+        <div class="project">
+            Project 3
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h3>Project 3</h3>
+                    <p>Additional information about Project 3 goes here.</p>
+                </div>
+                <button class="close-button">Close</button>
+            </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        // Get all project items
+        const projects = document.querySelectorAll('.project');
+
+        // Add click event listeners to each project item
+        projects.forEach((project) => {
+            project.addEventListener('click', () => {
+                const overlay = project.querySelector('.overlay');
+                overlay.style.display = 'flex';
+            });
+
+            const closeButton = project.querySelector('.close-button');
+            closeButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent the click event from reaching the project item
+                const overlay = project.querySelector('.overlay');
+                overlay.style.display = 'none';
+            });
+        });
+      </script>
+
 
       <section id="contact">
           <h2>Contact Me</h2>
