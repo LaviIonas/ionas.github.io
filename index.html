@@ -11,9 +11,9 @@
 </head>
 <body>
 
-      <div class="banner">
-        
-      </div>
+      <!-- <div class="banner">
+
+      </div> -->
 
       <div class="navbar" id="navbar">
         <div class="container">
@@ -54,9 +54,9 @@
       <script src="nav-bar-script.js"></script>
 
       <script>
-
         // Function to toggle the visibility of content
-        function toggleContent(contentId) {
+        function toggleContent(event, contentId) {
+
             const contentDiv = document.getElementById('content');
             contentDiv.style.opacity = 0; // Fade out the current content
 
