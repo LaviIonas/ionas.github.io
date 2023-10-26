@@ -54,3 +54,10 @@ footer {
     padding: 10px;
     border: 1px solid #ddd;
 }
+
+
+
+.banner {
+  background-color: blue;
+  height: 500px;
+}
