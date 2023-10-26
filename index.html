@@ -36,30 +36,27 @@
       </section>
 
       <script>
-      // Function to load content into the "content" div
-      function loadContent(page) {
-          var contentDiv = document.getElementById("content");
+        // Function to toggle the visibility of content
+        function toggleContent(contentId) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.style.opacity = 0; // Fade out the current content
 
-          // Use fetch to load the content from the specified HTML file
-          fetch(page)
-              .then(response => response.text())
-              .then(data => {
-                  contentDiv.innerHTML = data;
-              });
-      }
+            // Delay the content change to allow the fade-out effect
+            setTimeout(() => {
+                fetch('' + contentId + '.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        contentDiv.innerHTML = data; // Replace the content
+                        contentDiv.style.opacity = 1; // Fade in the new content
+                    })
+                    .catch(error => console.error(error));
+            }, 500); // Adjust this delay as needed
+        }
 
-      // Event listeners to load content when navigation links are clicked
-      document.getElementById("about-link").addEventListener("click", function() {
-          loadContent("/about.html");
-      });
-
-      document.getElementById("portfolio-link").addEventListener("click", function() {
-          loadContent("/portfolio.html");
-      });
-
-      document.getElementById("contact-link").addEventListener("click", function() {
-          loadContent("/contact.html");
-      });
+        // Add event listeners for menu items
+        document.getElementById('about-link').addEventListener('click', () => toggleContent('about'));
+        document.getElementById('portfolio-link').addEventListener('click', () => toggleContent('portfolio'));
+        document.getElementById('contact-link').addEventListener('click', () => toggleContent('contact'));
     </script>
 
     <footer>

@@ -26,16 +26,16 @@ h1 {
 nav ul {
     list-style: none;
     display: flex;
-    width: 100%; /* Use the entire width of the screen */
-    justify-content: space-between; /* Divide the menu into three equal parts */
+    width: 100%;
+    justify-content: space-between;
 }
 
 nav li {
     margin: 0 20px;
 }
 
-/* Center-align left and right menu options */
-nav li:first-child, nav li:last-child {
+nav li:first-child,
+nav li:last-child {
     margin: 0;
     flex: 1;
     display: flex;
@@ -47,11 +47,27 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    transition: color 0.3s;
+    transition: color 0.3s, opacity 0.3s; /* Add transitions for color and opacity */
+    opacity: 0.7; /* Initial opacity for menu items */
 }
 
 nav a:hover {
     color: #ff8800;
+    opacity: 1; /* Increase opacity on hover */
+}
+
+/* Add a fade-in/fade-out transition */
+#about-content,
+#portfolio-content,
+#contact-content {
+    transition: opacity 0.3s;
+    opacity: 0; /* Initial opacity for content sections */
+}
+
+#about-content.active,
+#portfolio-content.active,
+#contact-content.active {
+    opacity: 1; /* Increase opacity for active content */
 }
 
 #content {
@@ -74,4 +90,53 @@ footer {
     padding: 10px 0;
     background-color: #0044ff;
     color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #0044ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: opacity 0.5s; /* Add a transition for the opacity change */
+}
+
+section {
+    margin: 20px 0;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+/* Initial style for fading effect */
+#content {
+    opacity: 1;
+}
+
+/* Hide the content initially */
+#content[style] {
+    opacity: 0;
 }
