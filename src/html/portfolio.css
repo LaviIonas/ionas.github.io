@@ -1,68 +1,42 @@
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .project {
+    width: 90%; /* One project per row */
     background-color: #f0f0f0;
     padding: 20px;
-    text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 20px;
-    width: 90%;
-    padding-bottom: 100%;
-    position: relative; /* Required for positioning the overlay */
-    cursor: pointer; /* Add a cursor pointer on hover */
-}
-
-.overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden; /* Add this property */
 }
 
-.overlay-content {
-    padding: 20px;
+.project img {
+    max-width: 100%;
+    height: auto;
 }
 
-.close-button {
-    margin-top: 10px;
-    cursor: pointer;
-    background-color: #0075FF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+.more-info {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-weight: bold;
+    text-align: left;
 }
 
-/* Additional styling for project items */
+/* Additional styling for hover effects, animations, and transitions */
 .project:hover {
-    background-color: #0075FF;
-    color: #fff;
+    background-color: #eee;
+    transition: background-color 1.3s;
+}
+
+.project .see-more:hover, .project .live-website:hover {
+    background-color: #0055CC;
     transition: background-color 0.3s;
+}
+
+#more-web-app-projects {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }

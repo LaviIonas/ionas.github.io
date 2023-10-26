@@ -73,6 +73,21 @@
         document.getElementById('ml-link').addEventListener('click', () => toggleContent('machine-learning'));
     </script>
 
+    <script type="text/javascript">
+    function showMoreProjects() {
+      const moreWebAppProjects = document.getElementById('more-web-app-projects');
+      const showMoreButton = document.getElementById('showMoreButton');
+
+      if (moreWebAppProjects.style.maxHeight) {
+          moreWebAppProjects.style.maxHeight = null;
+          showMoreButton.innerHTML = 'Show More Projects';
+      } else {
+          moreWebAppProjects.style.maxHeight = moreWebAppProjects.scrollHeight + 'px';
+          showMoreButton.innerHTML = 'Show Fewer Projects';
+      }
+    }
+    </script>
+
     <footer>
         &copy; 20XX Your Name
     </footer>

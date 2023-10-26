@@ -4,64 +4,66 @@
           <p>Welcome to my portfolio website. I am a passionate data scientist and web developer with a love for solving complex problems using data.</p>
       </section>
 
-      <div class="portfolio">
+      <div class="project-section">
         <div class="project">
-            Project 1
-            <div class="overlay">
-                <div class="overlay-content">
-                    <h3>Project 1</h3>
-                    <p>Additional information about Project 1 goes here.</p>
-                </div>
-                <button class="close-button">Close</button>
+            <img src="project1.jpg" alt="Project 1">
+            <h2>Project 1</h2>
+            <p>A short description of Project 1.</p>
+            <button class="live-website">Live Website</button>
+            <button class="see-more">See More</button>
+            <div class="more-info">
+                <!-- Additional information about Project 1 -->
+                <p>Detailed information about Project 1.</p>
             </div>
         </div>
-
         <div class="project">
-            Project 2
-            <div class="overlay">
-                <div class="overlay-content">
-                    <h3>Project 2</h3>
-                    <p>Additional information about Project 2 goes here.</p>
-                </div>
-                <button class="close-button">Close</button>
-            </div>
+          <img src="project2.jpg" alt="Project 2">
+          <h2>Project 2</h2>
+          <p>A short description of Project 2.</p>
+          <button class="live-website">Live Website</button>
+          <button class="see-more">See More</button>
+          <div class="more-info">
+              <!-- Additional information about Project 2 -->
+              <p>Detailed information about Project 2.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="project3.jpg" alt="Project 3">
+          <h2>Project 3</h2>
+          <p>A short description of Project 3.</p>
+          <button class="live-website">Live Website</button>
+          <button class="see-more">See More</button>
+          <div class="more-info">
+              <!-- Additional information about Project 3 -->
+              <p>Detailed information about Project 3.</p>
+          </div>
         </div>
 
-        <div class="project">
-            Project 3
-            <div class="overlay">
-                <div class="overlay-content">
-                    <h3>Project 3</h3>
-                    <p>Additional information about Project 3 goes here.</p>
-                </div>
-                <button class="close-button">Close</button>
+        <div id="web-app-spacer"></div>
+
+        <div id="more-web-app-projects">
+          <div class="project">
+            <img src="project4.jpg" alt="Project 4">
+            <h2>Project 4</h2>
+            <p>A short description of Project 4.</p>
+            <button class="live-website">Live Website</button>
+            <button class="see-more">See More</button>
+            <div class="more-info">
+                <!-- Additional information about Project 4 -->
+                <p>Detailed information about Project 4.</p>
             </div>
+          </div>
         </div>
-      </div>
 
-      <script type="text/javascript">
-        // Get all project items
-        const projects = document.querySelectorAll('.project');
-
-        // Add click event listeners to each project item
-        projects.forEach((project) => {
-            project.addEventListener('click', () => {
-                const overlay = project.querySelector('.overlay');
-                overlay.style.display = 'flex';
-            });
-
-            const closeButton = project.querySelector('.close-button');
-            closeButton.addEventListener('click', (event) => {
-                event.stopPropagation(); // Prevent the click event from reaching the project item
-                const overlay = project.querySelector('.overlay');
-                overlay.style.display = 'none';
-            });
-        });
-      </script>
+        <button onclick="showMoreProjects()" id="showMoreButton">Show More Projects</button>
 
 
-      <section id="contact">
-          <h2>Contact Me</h2>
-          <p>Feel free to reach out to me at your.email@example.com</p>
-      </section>
+    </div>
+
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me at your.email@example.com</p>
+    </section>
 </div>
