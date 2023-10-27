@@ -6,11 +6,12 @@ body {
 }
 
 .navbar {
-    background-color: #0075FF;
+    background-color: #C63D2F;
     color: #fff;
     min-height: 50px;
     width: 100%;
     z-index: 1;
+    margin-top:57px;
 }
 
 .container {
