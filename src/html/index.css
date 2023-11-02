@@ -2,51 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #618264;
+    background-color: #757975;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    background-color: #333;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-.project {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-
-
-.banner {
-  background-color: blue;
-  height: 500px;
-}
