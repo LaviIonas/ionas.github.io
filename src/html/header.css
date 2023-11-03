@@ -2,7 +2,7 @@ header {
   background-image: url('banner-church.jpg');
   background-size: cover;
   background-attachment: fixed; /* Fixed background image */
-  height: 50vh; /* Initial header height (50% of viewport height) */
+  height: 100vh; /* Initial header height (50% of viewport height) */
   max-height: 100vh; /* Limit the header's height to the viewport height */
   position: relative;
   overflow: hidden;
@@ -12,24 +12,28 @@ header {
 .static-image {
   background-color: rgba(0, 0, 0, 0.5); /* Add a background color for the static area */
   height: 100%; /* Full height of the header */
-  width: 50%; /* Initial width of the static area (50% of the header) */
+  width: 100%; /* Initial width of the static area (50% of the header) */
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1; /* Ensure the static area is above the background image */
 }
 
-.banner-content {
+#banner-content {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5); 
+  width: 100%;
   padding: 10px;
-  color: #fff;
+  color: #521e1a;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+}
+
+.banner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .name {
@@ -39,4 +43,25 @@ header {
 
 .profession {
   font-size: 18px;
+  margin-left: 10px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation button {
+  background: none;
+  border: none;
+  color: #521e1a;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  background: #521e1a;
+  width: 100%;
+  margin-top: 10px;
 }
