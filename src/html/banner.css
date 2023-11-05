@@ -1,28 +1,65 @@
 .banner {
-    height: 70vh; /* 70% of the viewport height */
-    background: #173F4F; /* Banner background color */
-    position: relative;
+    background: #173F4F;
+    text-align: center; /* Center the content horizontally and vertically */
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* Align content at the top of the banner */
+    align-items: center;
+    padding-top: 80px; /* Add padding to separate the content from the navbar */
+    height: 700px; /* Set the height to 70% of the viewport height */
 }
 
-.content {
-    flex: 1;
+.row1 {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    align-items: center;
+    width: 100%; /* Make the row 100% wide */
+    height: 15%;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    width: 100%; /* Make the row 100% wide */
+    height: 100%;
+}
+
+.column {
+    color: #fff;
+    width: 50%; /* Set the width to 50% for each column */
+    text-align: center; /* Center the content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally and vertically */
+    margin: 10px; /* Add some spacing between the columns */
+    height: calc(100% - 40px); 
+}
+
+#banner-greet {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-me {
+    height: 300px;
+    background: #4BB679;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px -10px 6px 3px #133441b7 ;
 }
 
-.square {
-    width: 200px;
-    height: 200px;
-    background: #fff; /* Square background color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.text {
+.about-content {
     font-size: 24px;
+    color: #fff;
 }

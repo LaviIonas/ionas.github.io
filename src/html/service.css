@@ -1,0 +1,9 @@
+.service-option {
+    height: 100px;
+    background: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -10px 10px 3px rgba(66, 160, 107, 0.855) ;
+}
