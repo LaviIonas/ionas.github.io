@@ -4,55 +4,52 @@
     <meta charset="UTF-8">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="content.css">
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
-    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="nav-bar.css">
+    <link rel="stylesheet" type="text/css" href="banner.css">
+    <!-- <link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css"> -->
 </head>
 
 <body>
 
-      <header>
-            <div class="static-img">
-                <div class="banner-text">
-                    <h1>lavi ionas</h1>
-                    <p>Web Developer</p>
-                </div>
-                <div class="banner-gif">
-                    <img src="neuro4.gif" alt="GIF">
-                </div>
-            </div>
-      </header>
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
-      <div class="navbar" id="navbar">
-        <div class="container">
-            <div class="navbar-logo">
-                <a href="#">Your Logo</a>
+    <div class="banner">
+        <div class="content">
+            <div class="square">
+                <div class="text">Square 1</div>
             </div>
-            <div class="navbar-links">
-                <a href="#">Home</a>
-                <a href="#" id="web-link">Web Development</a>
-                <a href="#" id="ds-link">Data Science</a>
-                <a href="#" id="ml-link">Machine Learning</a>
+            <div class="square">
+                <div class="text">Square 2</div>
             </div>
         </div>
     </div>
 
+    <div id="content"></div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio website. I am a passionate data scientist and web developer with a love for solving complex problems using data.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me at laviionas772@gmail.com</p>
+    </section>
 
-      <div id="content"></div>
-      <section id="about">
-          <h2>About Me</h2>
-          <p>Welcome to my portfolio website. I am a passionate data scientist and web developer with a love for solving complex problems using data.</p>
-      </section>
-      <section id="contact">
-          <h2>Contact Me</h2>
-          <p>Feel free to reach out to me at laviionas772@gmail.com</p>
-      </section>
 
+    <script src="nav-bar-script.js"></script>
+    <script src="scroll-bar.js"></script>
 
-      <script src="nav-bar-script.js"></script>
-
-      <script>
+    <script>
 
         // Function to toggle the visibility of content
         function toggleContent(contentId) {
@@ -80,18 +77,18 @@
     </script>
 
     <script type="text/javascript">
-    function showMoreProjects() {
-      const moreWebAppProjects = document.getElementById('more-web-app-projects');
-      const showMoreButton = document.getElementById('showMoreButton');
+        function showMoreProjects() {
+        const moreWebAppProjects = document.getElementById('more-web-app-projects');
+        const showMoreButton = document.getElementById('showMoreButton');
 
-      if (moreWebAppProjects.style.maxHeight) {
-          moreWebAppProjects.style.maxHeight = null;
-          showMoreButton.innerHTML = 'Show More Projects';
-      } else {
-          moreWebAppProjects.style.maxHeight = moreWebAppProjects.scrollHeight + 'px';
-          showMoreButton.innerHTML = 'Show Fewer Projects';
-      }
-    }
+        if (moreWebAppProjects.style.maxHeight) {
+            moreWebAppProjects.style.maxHeight = null;
+            showMoreButton.innerHTML = 'Show More Projects';
+        } else {
+            moreWebAppProjects.style.maxHeight = moreWebAppProjects.scrollHeight + 'px';
+            showMoreButton.innerHTML = 'Show Fewer Projects';
+        }
+        }
     </script>
 
     <footer>

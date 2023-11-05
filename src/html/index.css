@@ -1,7 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Source Sans Pro',sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #757975;
+    background-color: #ffffff;
+
+    scrollbar-width: thin;;
 }
 

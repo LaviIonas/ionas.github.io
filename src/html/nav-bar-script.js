@@ -1,17 +1,12 @@
-// Get the navigation bar element
-const navbar = document.getElementById("navbar");
+window.onscroll = function() {
+    shrinkNavbar();
+};
 
-// Get the initial position of the navigation bar
-const navbarTop = navbar.offsetTop;
-
-// Function to make the navigation bar sticky
-function stickyNavbar() {
-    if (window.pageYOffset >= navbarTop) {
-        navbar.classList.add("sticky");
+function shrinkNavbar() {
+    const navbar = document.getElementById("navbar");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.style.padding = "5px 0"; /* Adjust padding as needed */
     } else {
-        navbar.classList.remove("sticky");
+        navbar.style.padding = "10px"; /* Restore the original padding */
     }
 }
-
-// Add a scroll event listener to call the stickyNavbar function
-window.addEventListener("scroll", stickyNavbar);
