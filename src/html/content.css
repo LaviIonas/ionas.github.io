@@ -1,4 +1,34 @@
-body {
+#content-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Adjust the height as needed */
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff; /* Adjust background color */
+    color: #333; /* Adjust text color */
+}
+
+/* Initial position for each content */
+#web-dev-content {
+    transform: translateX(0);
+}
+
+#web-app-content {
+    transform: translateX(100%);
+}
+
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,12 +52,12 @@ nav a {
 }
 
 #content {
-    max-width: 100%; /* Ensure the content spans the full width of the screen */
-    height: auto; /* Adjust this value based on the tallest content section */
-    overflow-y: auto; /* Add vertical scrolling if content exceeds the fixed height */
+    max-width: 100%;
+    height: auto; 
+    overflow-y: auto; 
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #aaa;
     transition: opacity 0.5s;
 }
 
@@ -39,12 +69,10 @@ section {
     margin: 20px 0;
 }
 
-/* Initial style for fading effect */
 #content {
     opacity: 1;
 }
 
-/* Hide the content initially */
 #content[style] {
     opacity: 0;
-}
+} */

@@ -6,8 +6,9 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="nav-bar.css">
     <link rel="stylesheet" type="text/css" href="banner.css">
-    <!-- <link rel="stylesheet" type="text/css" href="content.css">
-    <link rel="stylesheet" type="text/css" href="portfolio.css"> -->
+    <link rel="stylesheet" type="text/css" href="service.css">
+    <link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 
 <body>
@@ -24,58 +25,116 @@
         </ul>
     </div>
 
-    <div class="row">
-        <div id="banner-greet">
-            Hello
+    <div class="banner">
+        <div class="row1">
+            <div id="banner-greet">
+                Hello
+            </div>
         </div>
-        <div class="column" style="background-color:#aaa;">
-            <h2>Column 1</h2>
-            <p>Some text..</p>
-        </div>
-        <div class="column" style="background-color:#bbb;">
-            <h2>Column 2</h2>
-            <p>Some text..</p>
+        <div class="row2">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>Some text..</p>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>Some text..</p>
+            </div>
         </div>
     </div>
 
-    <div id="content"></div>
-    <section id="about">
-        <h2>About Me</h2>
+    <div class="about-me">
+        <div class="about-content">
+            <h2>About Me</h2>
         <p>Welcome to my portfolio website. I am a passionate data scientist and web developer with a love for solving complex problems using data.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me at laviionas772@gmail.com</p>
-    </section>
+        </div>
+    </div>
 
+    <div class="service-option">
+        <div class="service-content">
+            <div class="service-row">
+                <div class="option" id="web-des" onclick="toggleContent('web-dev-content')">
+                    <h2>Web Design</h2>
+                </div>
+                <div class="option" id="web-app" onclick="toggleContent('web-app-content')">
+                    <h2>Web Applications</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content-container">
+        <div id="web-dev-content" class="content">
+            <h2>Web Development Content</h2>
+            <p>This is the Web Development content.</p>
+        </div>
+        <div id="web-app-content" class="content">
+            <h2>Web Applications Content</h2>
+            <p>This is the Web Applications content.</p>
+        </div>
+    </div>
 
     <script src="nav-bar-script.js"></script>
 
     <script>
 
-        // Function to toggle the visibility of content
-        function toggleContent(contentId) {
-            const contentDiv = document.getElementById('content');
-            contentDiv.style.opacity = 0; // Fade out the current content
-            // Delay the content change to allow the fade-out effect
-            setTimeout(() => {
-                fetch('' + contentId + '.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        contentDiv.innerHTML = data; // Replace the content
-                        contentDiv.style.opacity = 1; // Fade in the new content
-                    })
-                    .catch(error => console.error(error));
-            }, 500); // Adjust this delay as needed
-        }
-        // Load the default content (e.g., 'about') when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            toggleContent('web-dev');
+        document.addEventListener("DOMContentLoaded", function () {
+            const content = document.getElementById("content");
+            const webDesOption = document.getElementById("web-des");
+            const webAppOption = document.getElementById("web-app");
+
+            // Function to change the background color of the content
+            function changeContentBackground(color) {
+                content.style.backgroundColor = color;
+            }
+
+            // Event listener for Web Design option
+            webDesOption.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                changeContentBackground("#aaa"); // Change to the desired background color
+            });
+
+            // Event listener for Web Applications option
+            webAppOption.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                changeContentBackground("#bbb"); // Change to the desired background color
+            });
         });
-        // Add event listeners for menu items
-        document.getElementById('web-link').addEventListener('click', () => toggleContent('web-dev'));
-        document.getElementById('ds-link').addEventListener('click', () => toggleContent('data-science'));
-        document.getElementById('ml-link').addEventListener('click', () => toggleContent('machine-learning'));
+
+        function toggleContent(contentId) {
+            const contentContainer = document.getElementById('content-container');
+            const content = document.querySelectorAll('.content');
+            
+            content.forEach((element) => {
+                element.style.transform = 'translateX(100%)'; // Move all content out of the screen
+            });
+            
+            const selectedContent = document.getElementById(contentId);
+            selectedContent.style.transform = 'translateX(0)'; // Bring in the selected content
+        }
+
+        // // Function to toggle the visibility of content
+        // function toggleContent(contentId) {
+        //     const contentDiv = document.getElementById('content');
+        //     contentDiv.style.opacity = 0; // Fade out the current content
+        //     // Delay the content change to allow the fade-out effect
+        //     setTimeout(() => {
+        //         fetch('' + contentId + '.html')
+        //             .then(response => response.text())
+        //             .then(data => {
+        //                 contentDiv.innerHTML = data; // Replace the content
+        //                 contentDiv.style.opacity = 1; // Fade in the new content
+        //             })
+        //             .catch(error => console.error(error));
+        //     }, 500); // Adjust this delay as needed
+        // }
+        // // Load the default content (e.g., 'about') when the page loads
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     toggleContent('web-dev');
+        // });
+        // // Add event listeners for menu items
+        // document.getElementById('web-des').addEventListener('click', () => toggleContent('web-dev'));
+        // document.getElementById('web-app').addEventListener('click', () => toggleContent('machine-learning'));
     </script>
 
     <script type="text/javascript">
