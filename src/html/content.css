@@ -21,10 +21,12 @@
 
 /* Initial position for each content */
 #web-dev-content {
+    background-color: #aaaaaa;
     transform: translateX(0);
 }
 
 #web-app-content {
+    background-color: #bbbbbb;
     transform: translateX(100%);
 }
 

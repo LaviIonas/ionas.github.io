@@ -25,24 +25,23 @@
 }
 
 .column {
-    color: #fff;
-    width: 50%; /* Set the width to 50% for each column */
-    text-align: center; /* Center the content horizontally */
+    color: #35b9ab;
+    width: 50%; 
+    text-align: center; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally and vertically */
-    margin: 10px; /* Add some spacing between the columns */
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px; 
     height: calc(100% - 40px); 
 }
 
 #banner-greet {
     text-align: center;
     font-size: 15px;
-    color: #fff;
+    color: #ffffff;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
