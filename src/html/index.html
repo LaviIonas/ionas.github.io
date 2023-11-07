@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="nav-bar.css">
     <link rel="stylesheet" type="text/css" href="banner.css">
     <link rel="stylesheet" type="text/css" href="service.css">
-    <link rel="stylesheet" type="text/css" href="content.css">
+    <!-- <link rel="stylesheet" type="text/css" href="content.css"> -->
+    <link rel="stylesheet" type="text/css" href="web-dev.css">
+    <link rel="stylesheet" type="text/css" href="web-app.css">
     <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 
@@ -66,7 +68,13 @@
     <div id="content-container">
         <div id="web-dev-content" class="content">
             <h2>Web Development Content</h2>
-            <p>This is the Web Development content.</p>
+            <div class="project">
+                <div class="project-content">
+                    <h3>Project 1</h3>
+                    <p>Desc for project 1</p>
+                </div>
+            </div>
+          
         </div>
         <div id="web-app-content" class="content">
             <h2>Web Applications Content</h2>
@@ -79,7 +87,7 @@
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
-            const content = document.getElementById("content");
+            const content = document.getElementById("content-container");
             const webDesOption = document.getElementById("web-des");
             const webAppOption = document.getElementById("web-app");
 

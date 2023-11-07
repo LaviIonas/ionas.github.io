@@ -1,0 +1,27 @@
+#web-dev-content {
+    background-color: #aaaaaa;
+    transform: translateX(0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    width: 300px; /* Adjust the width of each project */
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.project-content {
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+}
