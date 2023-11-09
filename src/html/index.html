@@ -2,15 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Portfolio</title>
+    <title>Lavi Ionas</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="nav-bar.css">
     <link rel="stylesheet" type="text/css" href="banner.css">
     <link rel="stylesheet" type="text/css" href="service.css">
-    <!-- <link rel="stylesheet" type="text/css" href="content.css"> -->
-    <link rel="stylesheet" type="text/css" href="web-dev.css">
-    <link rel="stylesheet" type="text/css" href="web-app.css">
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
 </head>
 
 <body>
@@ -20,39 +17,58 @@
             <img src="leaf.png" alt="Logo">
         </div>
         <ul class="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#banner-anchor"  id="home">HOME</a></li>
+            <li><a href="#about-anchor"  id="about">ABOUT</a></li>
+            <li><a href="#service-anchor"  id="service">SERVICES</a></li>
+            <li><a href="#contact-anchor"  id="contact">CONTACT</a></li>
         </ul>
     </div>
 
-    <div class="banner">
+    <div class="banner" id="banner-anchor">
         <div class="row1">
             <div id="banner-greet">
-                Hello
+                Hello! My name is <span>Lavi Ionas</span> and I like to build things!
             </div>
         </div>
         <div class="row2">
             <div class="column">
-                <h2>Column 1</h2>
-                <p>Hello</p>
+                <ul>
+                    <li>
+                        <img src="check-mark.webp" alt="Check Mark">
+                        <strong>Full-Stack Expertise:</strong>
+                        <span>
+                            Proficient in both front-end (HTML, CSS, JavaScript, React) and back-end (Node.js, Express, MongoDB) technologies, allowing me to create seamless and responsive user experiences.
+                        </span> 
+                    </li>
+                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Design-Centric Approach:</strong> Combining my technical skills with a keen sense of design, I strive to create visually appealing and user-friendly interfaces that leave a lasting impression.</li>
+                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Problem Solver:</strong> Enjoy tackling challenges and finding innovative solutions. Whether it's optimizing website performance or implementing complex functionalities, I approach every project with a problem-solving mindset.</li>
+                </ul>
             </div>
             <div class="column">
-                <h2>Column 2</h2>
-                <p>Some text..</p>
+                <ul>
+                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Collaborative Team Player:</strong> Thrive in collaborative environments and believe in the power of teamwork. I actively contribute ideas, communicate effectively, and adapt to evolving project requirements.</li>
+                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Continuous Learner:</strong> In the ever-evolving world of web development, I stay up-to-date with the latest technologies and trends. I am committed to lifelong learning and seek opportunities to enhance my skills.</li>
+                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Let's Build Something Amazing:</strong> I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life.</li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <div class="about-me">
+    <div class="about-me" id="about-anchor">
         <div class="about-content">
-            <h2>About Me</h2>
-        <p>Welcome to my portfolio website. I am a passionate data scientist and web developer with a love for solving complex problems using data.</p>
+            <h2>Let's Build Something Amazing:</h2>
+            <p>I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. 
+                Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life. 
+                Let's collaborate and build something amazing together!
+            </p>
+            <p>
+                Feel free to explore my portfolio and get in touch to discuss how I can contribute to your next web development project. 
+                Thank you for visiting!
+            </p>
         </div>
     </div>
 
-    <div class="service-option">
+    <div class="service-option" id="service-anchor">
         <div class="service-content">
             <div class="service-row">
                 <div class="option" id="web-des" onclick="toggleContent('web-dev-content')">
@@ -67,18 +83,75 @@
 
     <div id="content-container">
         <div id="web-dev-content" class="content">
-            <h2>Web Development Content</h2>
-            <div class="project">
-                <div class="project-content">
-                    <h3>Project 1</h3>
-                    <p>Desc for project 1</p>
+            <div class="projects">
+                <div class="project" onclick="expandProject(this)">
+                    <div class="project-content">
+                        <h3>Pharma-Rex</h3>
+                        <p>Medication Reminder Application</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Project 1</h3>
+                        <p>Desc for project 1</p> 
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Project 1</h3>
+                        <p>Desc for project 1</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Project 1</h3>
+                        <p>Desc for project 1</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Project 1</h3>
+                        <p>Desc for project 1</p>
+                    </div>
                 </div>
             </div>
-          
         </div>
         <div id="web-app-content" class="content">
-            <h2>Web Applications Content</h2>
-            <p>This is the Web Applications content.</p>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Project 1</h3>
+                        <p>Desc for project 1</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Project 1</h3>
+                        <p>Desc for project 1</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Project 1</h3>
+                        <p>Desc for project 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact-anchor">
+        <div class="contact-content">
+            <h2>Let's Build Something Amazing:</h2>
+            <p>I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. 
+                Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life. 
+                Let's collaborate and build something amazing together!
+            </p>
+            <p>
+                Feel free to explore my portfolio and get in touch to discuss how I can contribute to your next web development project. 
+                Thank you for visiting!
+            </p>
         </div>
     </div>
 
@@ -121,6 +194,36 @@
             selectedContent.style.transform = 'translateX(0)'; // Bring in the selected content
         }
 
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get all anchor links with the class 'scroll-link'
+            const scrollLinks = document.querySelectorAll('.menu a');
+
+            // Add click event listeners to each anchor link
+            scrollLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Get the target section's ID from the href attribute
+                    const targetId = this.getAttribute('href');
+
+                    // Find the target section by ID
+                    const targetSection = document.querySelector(targetId);
+
+                    if (targetSection) {
+                        // Calculate the offset to account for the fixed navbar height
+                        const navbarHeight = document.getElementById('navbar').offsetHeight;
+                        const offset = targetSection.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+                        // Scroll smoothly to the target section
+                        window.scrollTo({
+                            top: offset,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
         // // Function to toggle the visibility of content
         // function toggleContent(contentId) {
         //     const contentDiv = document.getElementById('content');

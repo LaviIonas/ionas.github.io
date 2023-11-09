@@ -5,8 +5,8 @@
     flex-direction: column;
     justify-content: flex-start; /* Align content at the top of the banner */
     align-items: center;
-    padding-top: 80px; /* Add padding to separate the content from the navbar */
-    height: 700px; /* Set the height to 70% of the viewport height */
+    padding-top: 100px; /* Add padding to separate the content from the navbar */
+    height: 600px; /* Set the height to 70% of the viewport height */
 }
 
 .row1 {
@@ -36,10 +36,45 @@
     height: calc(100% - 40px); 
 }
 
+.column ul {
+    width: 70%;
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.column ul strong {
+    color: #fff;
+    font-size: 30px;
+}
+
+.column ul li {
+    margin-bottom: 15px;
+}
+
+.column ul img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.column ul li strong {
+    min-width: 150px;
+    display: inline-block;
+}
+
+.column ul li span {
+    text-indent: 20px;
+}
+
 #banner-greet {
     text-align: center;
-    font-size: 15px;
-    color: #ffffff;
+    font-size: 40px;
+    color: #35b9ab
+}
+
+#banner-greet span{
+    font-size: 60px;
+    color: #fff
 }
 
 .row:after {
@@ -49,6 +84,7 @@
 }
 
 .about-me {
+    width: 100%;
     height: 300px;
     background: #4BB679;
     text-align: center;
@@ -59,6 +95,11 @@
 }
 
 .about-content {
+    width: 60%;
     font-size: 24px;
     color: #fff;
+}
+
+.about-content h2{
+    color: #173F4F;
 }

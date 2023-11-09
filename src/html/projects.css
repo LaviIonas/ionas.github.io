@@ -4,24 +4,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+}
+
+#web-app-content {
+    background-color: #bbbbbb;
+    transform: translateX(0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center-top;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project {
-    width: 300px; /* Adjust the width of each project */
-    padding: 10px;
-    background: #fff;
-    border-radius: 10px;
+    width: 40%;
+    height: 200px;
+    margin: 30px;
+    background: #173F4F;
+    border-radius: 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .project-content {
     text-align: center;
+    color: #fff;
 }
 
 .project:hover {
-    transform: scale(1.05); /* Scale up on hover */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
