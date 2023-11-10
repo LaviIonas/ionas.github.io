@@ -16,6 +16,7 @@
         <div class="logo">
             <img src="leaf.png" alt="Logo">
         </div>
+        
         <ul class="menu">
             <li><a href="#banner-anchor"  id="home">HOME</a></li>
             <li><a href="#about-anchor"  id="about">ABOUT</a></li>
@@ -32,23 +33,14 @@
         </div>
         <div class="row2">
             <div class="column">
-                <ul>
-                    <li>
-                        <img src="check-mark.webp" alt="Check Mark">
-                        <strong>Full-Stack Expertise:</strong>
-                        <span>
-                            Proficient in both front-end (HTML, CSS, JavaScript, React) and back-end (Node.js, Express, MongoDB) technologies, allowing me to create seamless and responsive user experiences.
-                        </span> 
-                    </li>
-                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Design-Centric Approach:</strong> Combining my technical skills with a keen sense of design, I strive to create visually appealing and user-friendly interfaces that leave a lasting impression.</li>
-                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Problem Solver:</strong> Enjoy tackling challenges and finding innovative solutions. Whether it's optimizing website performance or implementing complex functionalities, I approach every project with a problem-solving mindset.</li>
-                </ul>
+                <img src="web-dev.webp">
             </div>
-            <div class="column">
+            <div class="column" id="right">
                 <ul>
-                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Collaborative Team Player:</strong> Thrive in collaborative environments and believe in the power of teamwork. I actively contribute ideas, communicate effectively, and adapt to evolving project requirements.</li>
-                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Continuous Learner:</strong> In the ever-evolving world of web development, I stay up-to-date with the latest technologies and trends. I am committed to lifelong learning and seek opportunities to enhance my skills.</li>
-                    <li><img src="check-mark.webp" alt="Check Mark"><strong>Let's Build Something Amazing:</strong> I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life.</li>
+                    <li><img src="check-mark.webp" id="check"><span>Design Oriented</span> Programming</li>
+                    <li><img src="check-mark.webp" id="check">Effective <span>Problem Solver</span></li>
+                    <li><img src="check-mark.webp" id="check"><span>Client Centric</span> Designs</li>
+                    <li><img src="check-mark.webp" id="check">Develop <span>Responsive </span>Websites</li>
                 </ul>
             </div>
         </div>
@@ -56,7 +48,14 @@
 
     <div class="about-me" id="about-anchor">
         <div class="about-content">
-            <h2>Let's Build Something Amazing:</h2>
+            <img src="queen.png" alt="">
+            <div class="text-content">
+                <h4>A little but about me:</h4>
+                <h3>A <strong>Queen's University</strong> graduate in <strong>Computer Science</strong></h3>
+                <h3>I love building and designing functional and beautiful applications</h3>
+
+            </div>
+            <!-- <h2>Let's Build Something Amazing:</h2>
             <p>I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. 
                 Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life. 
                 Let's collaborate and build something amazing together!
@@ -64,10 +63,14 @@
             <p>
                 Feel free to explore my portfolio and get in touch to discuss how I can contribute to your next web development project. 
                 Thank you for visiting!
-            </p>
+            </p> -->
         </div>
     </div>
 
+    <div class="portfolio">
+
+
+    </div>
     <div class="service-option" id="service-anchor">
         <div class="service-content">
             <div class="service-row">
@@ -84,34 +87,10 @@
     <div id="content-container">
         <div id="web-dev-content" class="content">
             <div class="projects">
-                <div class="project" onclick="expandProject(this)">
+                <div class="project">
                     <div class="project-content">
                         <h3>Pharma-Rex</h3>
                         <p>Medication Reminder Application</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-content">
-                        <h3>Project 1</h3>
-                        <p>Desc for project 1</p> 
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-content">
-                        <h3>Project 1</h3>
-                        <p>Desc for project 1</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-content">
-                        <h3>Project 1</h3>
-                        <p>Desc for project 1</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-content">
-                        <h3>Project 1</h3>
-                        <p>Desc for project 1</p>
                     </div>
                 </div>
             </div>
@@ -143,21 +122,41 @@
 
     <div class="contact" id="contact-anchor">
         <div class="contact-content">
-            <h2>Let's Build Something Amazing:</h2>
-            <p>I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. 
-                Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life. 
-                Let's collaborate and build something amazing together!
+            <h2>Contact Me!</h2>
+            <p>Feel free to get in touch. I'm always eager to connect, discuss potential projects, or just have a conversation. 
+                You can reach out to me via the contact form or through the provided contact details below. 
+                I'll make sure to respond as soon as possible.
             </p>
+            <span>laviionas772@gmail.com</span>
             <p>
-                Feel free to explore my portfolio and get in touch to discuss how I can contribute to your next web development project. 
-                Thank you for visiting!
+                Looking forward to hearing from you!
             </p>
         </div>
     </div>
+    <!-- 
+    <ul>
+        <li>
+            <img src="check-mark.webp" alt="Check Mark">
+            <strong>Full-Stack Expertise:</strong>
+            <span>
+                Proficient in both front-end (HTML, CSS, JavaScript, React) and back-end (Node.js, Express, MongoDB) technologies, allowing me to create seamless and responsive user experiences.
+            </span> 
+        </li>
+        <li><img src="check-mark.webp" alt="Check Mark"><strong>Design-Centric Approach:</strong> Combining my technical skills with a keen sense of design, I strive to create visually appealing and user-friendly interfaces that leave a lasting impression.</li>
+        <li><img src="check-mark.webp" alt="Check Mark"><strong>Problem Solver:</strong> Enjoy tackling challenges and finding innovative solutions. Whether it's optimizing website performance or implementing complex functionalities, I approach every project with a problem-solving mindset.</li>
+    </ul> -->
+    <!-- <ul>
+        <li><img src="check-mark.webp" alt="Check Mark"><strong>Collaborative Team Player:</strong> Thrive in collaborative environments and believe in the power of teamwork. I actively contribute ideas, communicate effectively, and adapt to evolving project requirements.</li>
+        <li><img src="check-mark.webp" alt="Check Mark"><strong>Continuous Learner:</strong> In the ever-evolving world of web development, I stay up-to-date with the latest technologies and trends. I am committed to lifelong learning and seek opportunities to enhance my skills.</li>
+        <li><img src="check-mark.webp" alt="Check Mark"><strong>Let's Build Something Amazing:</strong> I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life.</li>
+    </ul> -->
+
 
     <script src="nav-bar-script.js"></script>
 
     <script>
+
+        
 
         document.addEventListener("DOMContentLoaded", function () {
             const content = document.getElementById("content-container");

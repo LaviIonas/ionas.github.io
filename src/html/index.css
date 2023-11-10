@@ -27,7 +27,6 @@ body {
 
 .contact {
     width: 100%;
-    height: 300px;
     background: #173F4F;
     text-align: center;
     display: flex;
@@ -43,5 +42,9 @@ body {
 }
 
 .contact-content h2{
+    color: #fff;
+}
+
+.contact-content span {
     color: #fff;
 }
