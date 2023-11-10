@@ -1,13 +1,13 @@
 body {
     font-family: 'Source Sans Pro',sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
+    margin: 0 0;
+    padding: 0 0;
+    background-color: #173F4F;
 }
 
-#content-container {
+
+
+/* #content-container {
     position: relative;
     overflow: hidden;
     height: 100vh;
@@ -21,8 +21,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff; /* Adjust background color */
-    color: #333; /* Adjust text color */
+    background-color: #fff; 
+    color: #333; 
 }
 
 .contact {
@@ -50,11 +50,11 @@ body {
 }
 
 
-/* Projects CSS */
+
 .portfolio {
     background-color: #aaa;
 }
 
 .portfolio #port-content{
     color: #000;
-}
+} */

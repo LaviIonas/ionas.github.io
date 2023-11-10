@@ -1,12 +1,13 @@
 .navbar {
     background: #173F4F;
     color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 15px 15px 15px 15px; 
-    position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
+    padding: 15px 15px 15px 15px; 
+    margin-left: -7px;
+    display: flex;
+    position: fixed;
+    align-items: center;
     z-index: 1;
     transition: all 0.3s;
 }
@@ -15,48 +16,53 @@
     margin-right: 40px; 
 }
 
-.logo {
-    flex: 1;
+.navbar-logo {
+    
 }
 
-.logo img {
+.navbar-logo img {
     width: 50px;
     height: 50px;
 }
 
-.menu {
+#navbar-name {
+    flex: 1;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.navbar-menu {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.menu li {
+.navbar-menu li {
     margin: 0 10px;
     position: relative;
 }
 
-.menu a {
+.navbar-menu a {
     color: #35b9ab;
     text-decoration: none;
     position: relative;
 }
 
-/* Animated line under the menu option on hover */
-.menu a::after {
+.navbar-menu a::after {
     content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 100%;
-    height: 2px; /* Adjust the line height as needed */
-    background-color: #fff; /* Line color */
+    height: 2px; 
+    background-color: #fff; 
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.5s ease;
 }
 
-.menu a:hover::after {
+.navbar-menu a:hover::after {
     transform: scaleX(1);
     transform-origin: center;
 }

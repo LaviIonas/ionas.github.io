@@ -1,46 +1,72 @@
 .banner {
     background: #173F4F;
-    text-align: center; /* Center the content horizontally and vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content at the top of the banner */
-    align-items: center;
-    padding-top: 100px; /* Add padding to separate the content from the navbar */
-    height: 600px; /* Set the height to 70% of the viewport height */
-}
-
-.row1 {
-    display: flex;
-    justify-content: center; /* Center the columns horizontally */
-    align-items: center;
-    width: 100%; /* Make the row 100% wide */
-    height: 15%;
-}
-
-.row2 {
-    display: flex;
-    justify-content: center; /* Center the columns horizontally */
-    width: 100%; /* Make the row 100% wide */
-    height: 100%;
-}
-
-.column {
-    color: #35b9ab;
-    width: 50%; 
+    height: 600px; 
     text-align: center; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start; 
     display: flex;
+    padding-top: 100px;
+}
+
+.banner-content{
+    width: 90%;
+    background-color: green;
+}
+
+#banner-row1 {
+    background-color: #aaa;
+    width: 90%; 
+    height: 150px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+}
+#banner-greet {
+    background-color: yellow;
+    text-align: center;
+    font-size: 40px;
+    color: #35b9ab
+}
+#banner-greet span{
+    font-size: 60px;
+    color: #fff
+}
+
+#banner-row2 {
+    background-color: #bbb;
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+    width: 90%; 
+    height: 500px;
+}
+
+.banner-column {
+    background-color: #ddd;
+    width: 50%; 
+    margin: 10px;
+    display: flex;
+    text-align: center; 
+    align-items: center; 
     flex-direction: column;
     justify-content: center; 
-    align-items: center; 
-    margin: 10px; 
-    height: calc(100% - 40px); 
 }
 
-.column#right {
-    text-align: left;
+#banner-col-cont{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
 }
 
-.column img {
+.line {
+    height: 3px;
+    background: black;
+}
+
+/* .column img {
     width: 600px;
     height: 600px;
 }
@@ -65,20 +91,8 @@
 
 .column ul li span {
     color: #fff;
-}
-
-#banner-greet {
-    text-align: center;
-    font-size: 40px;
-    color: #35b9ab
-}
-
-#banner-greet span{
-    font-size: 60px;
-    color: #fff
-}
-
-.row:after {
+} */
+/* .row:after {
     content: "";
     display: table;
     clear: both;
@@ -118,6 +132,6 @@
 
 .text-content strong{
     color: #fff;
-}
+} */
 
 

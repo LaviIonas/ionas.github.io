@@ -3,49 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Lavi Ionas</title>
-    <!-- <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="nav-bar.css">
-    <link rel="stylesheet" type="text/css" href="banner.css">
-    <link rel="stylesheet" type="text/css" href="service.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav-bar.css">
+    <link rel="stylesheet" type="text/css" href="../css/banner.css">
+    <!-- <link rel="stylesheet" type="text/css" href="service.css">  -->
     <!-- <link rel="stylesheet" type="text/css" href="projects.css"> -->
 </head>
 
 <body>
 
+
+    <!-- START for Navigation Bar -->
     <div class="navbar" id="navbar">
-        <div class="logo">
-            <img src="leaf.png" alt="Logo">
+        <div class="navbar-logo">
+            <img src="../img/leaf.png" alt="Logo">
         </div>
+        <div id="navbar-name">Lavi Ionas</div>
         
-        <ul class="menu">
+        <ul class="navbar-menu">
             <li><a href="#banner-anchor"  id="home">HOME</a></li>
             <li><a href="#about-anchor"  id="about">ABOUT</a></li>
             <li><a href="#service-anchor"  id="service">SERVICES</a></li>
             <li><a href="#contact-anchor"  id="contact">CONTACT</a></li>
         </ul>
     </div>
+    <!-- END for Navigation Bar  -->
 
+    <!-- START for Banner -->
     <div class="banner" id="banner-anchor">
-        <div class="row1">
-            <div id="banner-greet">
-                Hello! My name is <span>Lavi Ionas</span> and I like to build things!
+        <div class="banner-content">
+
+            <div id="banner-row1">
+                <div id="banner-greet">
+                    Hello! My name is <span>Lavi Ionas</span> and I like to build things!
+                </div>
             </div>
-        </div>
-        <div class="row2">
-            <div class="column">
-                <img src="web-dev.webp">
+            
+            <div id="banner-row2">
+                <div class="banner-column" id="bcL">
+                    <div class="banner-col-cont">
+
+                    </div>
+                </div>
+                <div class="banner-column" id="bcC">
+                    <div class="line"></div>
+                </div>
+                <div class="banner-column" id="bcR">
+                    <div class="banner-col-cont">
+
+                    </div>
+                </div>
             </div>
-            <div class="column" id="right">
-                <ul>
-                    <li><img src="check-mark.webp" id="check"><span>Design Oriented</span> Programming</li>
-                    <li><img src="check-mark.webp" id="check">Effective <span>Problem Solver</span></li>
-                    <li><img src="check-mark.webp" id="check"><span>Client Centric</span> Designs</li>
-                    <li><img src="check-mark.webp" id="check">Develop <span>Responsive </span>Websites</li>
-                </ul>
-            </div>
+
         </div>
     </div>
+    <!-- END for Banner -->
 
+<!--
     <div class="about-me" id="about-anchor">
         <div class="about-content">
             <img src="queen.png" alt="">
@@ -54,7 +68,7 @@
                 <h3>A <strong>Queen's University</strong> graduate in <strong>Computer Science</strong></h3>
                 <h3>I love designing and building functional and beautiful applications</h3>
 
-            </div>
+            </div> -->
             <!-- <h2>Let's Build Something Amazing:</h2>
             <p>I am excited about the prospect of turning ideas into reality and creating digital experiences that captivate users. 
                 Whether you need a sleek and responsive website or a dynamic web application, I am ready to bring your vision to life. 
@@ -64,14 +78,14 @@
                 Feel free to explore my portfolio and get in touch to discuss how I can contribute to your next web development project. 
                 Thank you for visiting!
             </p> -->
-        </div>
+        <!-- </div>
     </div>
 
     <div class="portfolio">
         <div id="port-content">
             <p>Here are some of the things I've done so far<p>
         </div>
-    </div>
+    </div> -->
 
     <!-- <div class="portfolio">
         <div class="service-option" id="service-anchor">
@@ -124,7 +138,7 @@
         </div>
     </div> -->
     
-
+<!-- 
     <div class="contact" id="contact-anchor">
         <div class="contact-content">
             <h2>Contact Me!</h2>
@@ -137,7 +151,7 @@
                 Looking forward to hearing from you!
             </p>
         </div>
-    </div>
+    </div> -->
     <!-- 
     <ul>
         <li>
@@ -157,9 +171,9 @@
     </ul> -->
 
 
-    <script src="nav-bar-script.js"></script>
+     <script src="../js/nav-bar.js"></script>
 
-    <script>
+    <!--<script>
 
         
 
@@ -227,8 +241,8 @@
                     }
                 });
             });
-        });
-        // // Function to toggle the visibility of content
+        }); -->
+        <!-- // // Function to toggle the visibility of content
         // function toggleContent(contentId) {
         //     const contentDiv = document.getElementById('content');
         //     contentDiv.style.opacity = 0; // Fade out the current content
@@ -249,10 +263,10 @@
         // });
         // // Add event listeners for menu items
         // document.getElementById('web-des').addEventListener('click', () => toggleContent('web-dev'));
-        // document.getElementById('web-app').addEventListener('click', () => toggleContent('machine-learning'));
+        // document.getElementById('web-app').addEventListener('click', () => toggleContent('machine-learning')); -->
     </script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function showMoreProjects() {
         const moreWebAppProjects = document.getElementById('more-web-app-projects');
         const showMoreButton = document.getElementById('showMoreButton');
@@ -265,10 +279,10 @@
             showMoreButton.innerHTML = 'Show Fewer Projects';
         }
         }
-    </script>
+    </script> -->
 
     <footer>
-        &copy; 2023 Lavi Ionas
+       
     </footer>
 </body>
 </html>
