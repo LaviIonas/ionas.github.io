@@ -51,3 +51,10 @@ body {
 
 
 /* Projects CSS */
+.portfolio {
+    background-color: #aaa;
+}
+
+.portfolio #port-content{
+    color: #000;
+}
