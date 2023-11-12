@@ -1,6 +1,6 @@
 .banner {
     background: #173F4F;
-    height: 600px; 
+    height: auto; 
     text-align: center; 
     align-items: center;
     flex-direction: column;
@@ -11,11 +11,11 @@
 
 .banner-content{
     width: 90%;
-    background-color: green;
+    border: 2px dashed rgb(25, 0, 255);
 }
 
 #banner-row1 {
-    background-color: #aaa;
+    border: 2px dashed rgb(225, 0, 255);
     width: 90%; 
     height: 150px;
     margin: auto;
@@ -24,28 +24,31 @@
     align-items: center;
     justify-content: center; 
 }
+
 #banner-greet {
-    background-color: yellow;
+    border: 2px dashed rgb(202, 162, 162);
+
     text-align: center;
     font-size: 40px;
     color: #35b9ab
 }
+
 #banner-greet span{
     font-size: 60px;
     color: #fff
 }
 
 #banner-row2 {
-    background-color: #bbb;
+    border: 2px dashed red;
     margin: auto;
     display: flex;
     justify-content: center; 
     width: 90%; 
-    height: 500px;
+    height: 600px;
 }
 
 .banner-column {
-    background-color: #ddd;
+    border: 2px dashed green;
     width: 50%; 
     margin: 10px;
     display: flex;
@@ -53,17 +56,61 @@
     align-items: center; 
     flex-direction: column;
     justify-content: center; 
+    position: relative;
+    overflow: hidden;
 }
 
-#banner-col-cont{
-    background-color: blue;
-    width: 200px;
-    height: 200px;
+.banner-column#bcC {
+    width: 5px;
+}
+
+.banner-col-cont{
+    border: 2px dashed blue;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: colu;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.banner-col-cont.left {
+    left: -1000px;
+}
+
+.banner-col-cont.right {
+    right: -1000px;
+}
+
+.banner-img {
+    /* border: 2px dashed red; */
+    background-color: #35b9ab;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.banner-img #biL {
+    width: 100%;
+}
+
+.banner-img #biR {
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.banner-text {
+    border: 2px dashed rgb(189, 202, 195);
+    width: 90%;
+    height: 40px;
+    position: relative;
 }
 
 .line {
-    height: 3px;
-    background: black;
+    border-left: 5px solid #35b9ab;
+    height: 250px;
 }
 
 /* .column img {

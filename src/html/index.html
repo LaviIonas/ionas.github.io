@@ -6,8 +6,12 @@
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="../css/nav-bar.css">
     <link rel="stylesheet" type="text/css" href="../css/banner.css">
+    <link rel="stylesheet" type="text/css" href="../css/education.css">
+
     <!-- <link rel="stylesheet" type="text/css" href="service.css">  -->
     <!-- <link rel="stylesheet" type="text/css" href="projects.css"> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -40,17 +44,27 @@
             </div>
             
             <div id="banner-row2">
-                <div class="banner-column" id="bcL">
-                    <div class="banner-col-cont">
-
+                <div class="banner-column">
+                    <div class="banner-col-cont left" id="bcL">
+                        <div class="banner-img">
+                            <img src="../img/web-dev.webp" id="biL">
+                        </div>
+                        <div class="banner-text">
+                            asdasd
+                        </div>
                     </div>
                 </div>
                 <div class="banner-column" id="bcC">
                     <div class="line"></div>
                 </div>
-                <div class="banner-column" id="bcR">
-                    <div class="banner-col-cont">
-
+                <div class="banner-column">
+                    <div class="banner-col-cont right" id="bcR">
+                        <div class="banner-img">
+                            <img src="../img/web-dev.webp" id="biR">
+                        </div>
+                        <div class="banner-text">
+                            asdds
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,6 +72,80 @@
         </div>
     </div>
     <!-- END for Banner -->
+
+
+    <div class="education">
+        <div class="education-content">
+            <div class="edu-col">
+                <div class="queens">
+                    <img src="../img/queen.png" alt="">
+                </div>
+            </div>
+
+            <div class="edu-col">
+                <div class="lighthouse">
+
+                </div>
+            </div>
+        </div>
+        <div class="rhombus">
+            <h1>AGHH</h1>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            var left = $('.banner-col-cont.left').width();
+            var right = $('.banner-col-cont.right').width();
+            var column_width = $('.banner-column').width();
+
+            var left_center = (column_width - left) / 2;
+            var right_center = (column_width - right) /2;
+            var i = 1;
+
+            $('.banner-col-cont.left').animate({
+                left: left_center +10
+            }, 1000);
+            $('.banner-col-cont.left').animate({
+                left: left_center 
+            }, 1000);
+            
+            $('.banner-col-cont.right').animate({
+                right: right_center
+            }, 1000);
+            $('.banner-col-cont.right').animate({
+                right: right_center - 10
+            }, 1000);
+
+            $('.rhombus').animate({
+                'margin-top': '-315px'
+            }, 500);
+            $('.rhombus').animate({
+                'margin-top': '-310px'
+            }, 500);
+
+            $('.edu-col').animate({
+                'margin-top': '-10px'
+            }, 1000);
+            $('.edu-col').animate({
+                'margin-top': '0px'
+            }, 1000);
+
+            for (let i = 0; i < 100; i++) {
+                $('.rhombus').animate({
+                'margin-top': '-315px'
+                }, 1000);
+                $('.rhombus').animate({
+                    'margin-top': '-310px'
+                }, 1000);
+            }
+        });
+    </script>
+
 
 <!--
     <div class="about-me" id="about-anchor">
@@ -171,8 +259,19 @@
     </ul> -->
 
 
-     <script src="../js/nav-bar.js"></script>
-
+    <script src="../js/nav-bar.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Animation for moving div
+            var columnWidth = $('#bcL').width();
+            var initialLeftPosition = -100; // Initial position outside the screen
+    
+            $('#banner-text').animate({
+                opacity: 1,
+                left: columnWidth * 0.1 // Move to 10% of the column width
+            }, 1000);
+        });
+    </script>
     <!--<script>
 
         
