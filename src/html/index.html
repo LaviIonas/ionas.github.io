@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../css/nav-bar.css">
     <link rel="stylesheet" type="text/css" href="../css/banner.css">
     <link rel="stylesheet" type="text/css" href="../css/education.css">
+    <link rel="stylesheet" type="text/css" href="../css/skills.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
 
     <!-- <link rel="stylesheet" type="text/css" href="service.css">  -->
-    <!-- <link rel="stylesheet" type="text/css" href="projects.css"> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -95,8 +96,126 @@
         </div>
     </div>
 
+    <div class="skills">
+        <div class="skills-content">
+            <div id="skill-row1">
+                <div id="skill-head">
+                    Hello! My name is <span>Lavi Ionas</span> and I like to build things!
+                </div>
+            </div>
+            
+            <div id="skill-row2">
+                <div class="skill-column">
+                    <div class="skill-col-cont left" id="scL">
+                        <div class="skill-img">
+                            <img src="../img/web-dev.webp" id="siL">
+                        </div>
+                        <div class="skill-text">
+                            asdasd
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-column">
+                    <div class="skill-col-cont right" id="scR">
+                        <div class="skill-img">
+                            <img src="../img/web-dev.webp" id="siR">
+                        </div>
+                        <div class="skill-text">
+                            asdds
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skill-row2">
+                <div class="skill-column">
+                    <div class="skill-col-cont left" id="scL">
+                        <div class="skill-img">
+                            <img src="../img/web-dev.webp" id="siL">
+                        </div>
+                        <div class="skill-text">
+                            asdasd
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-column">
+                    <div class="skill-col-cont right" id="scR">
+                        <div class="skill-img">
+                            <img src="../img/web-dev.webp" id="siR">
+                        </div>
+                        <div class="skill-text">
+                            asdds
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="skill-row3">
+                <div class="skill-bar-container">
+                    <p>HTML</p>
+                    <div class="bar-cont">
+                        <div class="bar html">90%</div>
+                    </div>
 
+                    <p>CSS</p>
+                    <div class="bar-cont">
+                        <div class="bar css">90%</div>
+                    </div>
 
+                    <p>PHP</p>
+                    <div class="bar-cont">
+                        <div class="bar php">70%</div>
+                    </div>
+
+                    <p>React</p>
+                    <div class="bar-cont">
+                        <div class="bar react">80%</div>
+                    </div>
+
+                    <p>JavaScript</p>
+                    <div class="bar-cont">
+                        <div class="bar js">80%</div>
+                    </div>
+
+                    <p>Angular</p>
+                    <div class="bar-cont">
+                        <div class="bar angular">60%</div>
+                    </div>
+
+                    <p>Node.js</p>
+                    <div class="bar-cont">
+                        <div class="bar node">80%</div>
+                    </div>
+
+                    <p>Ruby / Rails</p>
+                    <div class="bar-cont">
+                        <div class="bar ruby">50%</div>
+                    </div>
+
+                    <p>UX / UI</p>
+                    <div class="bar-cont">
+                        <div class="bar ux">70%</div>
+                    </div>
+
+                    <p>Docker</p>
+                    <div class="bar-cont">
+                        <div class="bar docker">60%</div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="project-container">
+
+            <div class="project">
+                <div class="project-content">
+                    <h3>Pharma-Rex</h3>
+                    <p>Medication Reminder Application</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
     <script>
@@ -110,41 +229,66 @@
             var i = 1;
 
             $('.banner-col-cont.left').animate({
-                left: left_center +10
+                left: left_center +10,
+                opacity: '1'
             }, 1000);
             $('.banner-col-cont.left').animate({
                 left: left_center 
             }, 1000);
             
             $('.banner-col-cont.right').animate({
-                right: right_center
+                right: right_center,
+                opacity: '1'
             }, 1000);
             $('.banner-col-cont.right').animate({
                 right: right_center - 10
             }, 1000);
 
             $('.rhombus').animate({
-                'margin-top': '-315px'
+                'margin-top': '-315px',
+                opacity: '1'
             }, 500);
             $('.rhombus').animate({
                 'margin-top': '-310px'
             }, 500);
 
             $('.edu-col').animate({
-                'margin-top': '-10px'
+                'margin-top': '-10px',
+                opacity: '1'
             }, 1000);
             $('.edu-col').animate({
                 'margin-top': '0px'
             }, 1000);
 
-            for (let i = 0; i < 100; i++) {
-                $('.rhombus').animate({
-                'margin-top': '-315px'
-                }, 1000);
-                $('.rhombus').animate({
-                    'margin-top': '-310px'
-                }, 1000);
-            }
+            $('.skill-col-cont.left').animate({
+                left: left_center +10,
+                opacity: '1'
+            }, 1000);
+            $('.skill-col-cont.left').animate({
+                left: left_center 
+            }, 1000);
+            
+            $('.skill-col-cont.right').animate({
+                right: right_center,
+                opacity: '1'
+            }, 1000);
+            $('.skill-col-cont.right').animate({
+                right: right_center - 10
+            }, 1000);
+
+            $('.html').animate({width: '90%'}, 1500);
+            $('.css').animate({width: '90%'}, 1500);
+            $('.php').animate({width: '70%'}, 1500);
+            $('.react').animate({width: '80%'}, 1500);
+            $('.js').animate({width: '80%'}, 1500);
+            $('.angular').animate({width: '60%'}, 1500);
+            $('.node').animate({width: '80%'}, 1500);
+            $('.ruby').animate({width: '50%'}, 1500);
+            $('.ux').animate({width: '70%'}, 1500);
+            $('.docker').animate({width: '60%'}, 1500);
+
+
+
         });
     </script>
 

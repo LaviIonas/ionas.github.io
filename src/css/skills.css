@@ -1,0 +1,150 @@
+.skills {
+    height: auto; 
+    text-align: center; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start; 
+    display: flex;
+    margin-top: 60px;
+}
+
+.skills-content { 
+    background: #ffffff;
+    width: 80%; 
+    border: 2px dashed rgb(25, 0, 255);
+}
+
+.skill-row1 {
+    border: 5px dashed rgb(51, 255, 0);
+    width: 100%; 
+    height: 300px;
+    /* margin: auto; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+}
+
+#skill-head {
+    border: 2px dashed rgb(202, 162, 162);
+    text-align: center;
+    font-size: 40px;
+    color: #35b9ab;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#skill-row2 {
+    border: 2px dashed red;
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+    width: 80%; 
+    height: 300px;
+}
+
+.skill-column {
+    border: 2px dashed green;
+    width: 50%; 
+    margin: 10px;
+    display: flex;
+    text-align: center; 
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center; 
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-col-cont{
+    /* border: 2px dashed blue; */
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: colu;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+}
+
+.skill-col-cont.left {
+    left: -1000px;
+}
+
+.skill-col-cont.right {
+    right: -1000px;
+}
+
+.skill-img {
+    /* border: 2px dashed red; */
+    background-color: #35b9ab;
+    width: 60%;
+    border-radius: 50%;
+}
+
+.skill-img #siL {
+    width: 100%;
+}
+
+.skill-img #siR {
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.skill-text {
+    /* border: 2px dashed rgb(189, 202, 195); */
+    width: 90%;
+    height: 40px;
+    position: relative;
+}
+
+#skill-row3 {
+    border: 2px dashed rgb(51, 255, 0);
+    width: 80%; 
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+}
+
+.skill-bar-container {
+    border: 2px dashed rgb(0, 0, 0);
+    width: 80%;
+}
+
+.skill-bar-container p{
+    font-size: 20px;
+    margin: auto;
+    float: left;
+}
+
+.bar-cont {
+    border: 2px dashed rgb(207, 69, 69);
+    width: 100%;
+    margin: auto;
+    background-color: #ddd;
+    display: flex;
+}
+
+.bar {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: #000000;
+}
+
+.html { width: 0%; background-color: #4BB679;}
+.css { width: 0%; background-color: #4BB679;}
+.php { width: 0%; background-color: #4BB679;}
+.react { width: 0%; background-color: #4BB679;}
+.js { width: 0%; background-color: #4BB679;}
+.angular { width: 0%; background-color: #4BB679;}
+.node { width: 0%; background-color: #4BB679;}
+.ruby { width: 0%; background-color: #4BB679;}
+.ux { width: 0%; background-color: #4BB679;}
+.docker { width: 0%; background-color: #4BB679;}
+

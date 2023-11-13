@@ -27,6 +27,8 @@
     justify-content: center; 
     position: relative;
     margin-top: 300px;
+    opacity: 0;
+    overflow: hidden;
 }
 
 .queens {
@@ -62,6 +64,7 @@
     margin-left: 1px;
     transform: rotate(45deg);
     text-align: center;
+    opacity: 0;
 }
 
 .rhombus h1 {
