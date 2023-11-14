@@ -101,13 +101,15 @@
     margin: auto;
 }
 
+.banner-circle img#biR {
+    transform: scaleX(-1);
+}
+
 .banner-text {
     /* border: 2px dashed rgb(189, 202, 195); */
     color: white;
-    width: 90%;
-    font-size: 30px;
+    width: 80%;
     margin-top: 20px;
-    position: relative;
 }
 
 .line {

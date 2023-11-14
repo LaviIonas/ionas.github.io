@@ -50,7 +50,6 @@
 }
 
 .navbar-menu a::after {
-    color: #fff;
     content: "";
     position: absolute;
     bottom: -5px;
