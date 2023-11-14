@@ -34,41 +34,64 @@
 .queens {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20%;
     /* border: 2px dashed rgb(31, 31, 30); */
 }
 
 .queens img {
-    float: left;
     width: 225px;
 }
 
 .lighthouse {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
     /* border: 2px dashed rgb(31, 31, 30); */
 }
 
 .lighthouse img {
-    float: right;
-    margin-top: 10px;;
-    width: 300px;
+    width: 225px;
+}
+
+.edu-text {
+    /* border: 2px dashed rgb(31, 31, 30); */
+    width: 50%;
+}
+
+.edu-text h1 {
+    font-size: 30px;
+    color: #000000;
+}
+.edu-text h2 {
+    font-size: 24px;
+    color: #173F4F;
 }
 
 .rhombus {
-    /* border: 2px dashed rgb(31, 181, 218); */
     box-shadow: 5px 5px 5px 0px #398b5d;
     background-color: #35b9ab;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     margin-top: 100px;
     margin-left: 1px;
     transform: rotate(45deg);
-    text-align: center;
+    border-radius: 50%;
+    display: flex;
     opacity: 0;
+    overflow: hidden;
 }
 
-.rhombus h1 {
-    color: #173F4F;
+.rhombus img {
     margin-top: 40%;
+    margin: auto;
     transform: rotate(-45deg);
+    border-radius: 50%;
+    width: 275px;
+    height: 275px;
 }
